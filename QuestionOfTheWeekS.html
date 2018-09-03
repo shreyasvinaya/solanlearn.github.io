@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type=”text/css” href="css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--Metadata-->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="description" content="Student answers Question Of The week">
+            <title>Question of the week</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <meta name="generator" content="Program">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+            <link rel="shortcut icon" href="assets/images/open-book.png" type="image/x-icon">
+        <!--CSS-->
+            <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+            <link rel="stylesheet" href="assets/tether/tether.min.css">
+            <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+            <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+            <link rel="stylesheet" href="assets/dropdown/css/style.css">
+            <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+            <link rel="stylesheet" href="assets/socicon/css/styles.css">
+            <link rel="stylesheet" href="assets/theme/css/style.css">
+            <link rel="stylesheet" href="assets/sidebar/sidebar.css">
+            <link rel="stylesheet" href="cards.css">
+            
+            <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+            <style>
+                body 
+                {
+                    background-color: white;
+                }
+                h1 
+                {
+                    color:black;
+                    text-align: center;
+                }
+                h5
+                {
+                    color: black;
+                    text-align: center;
+                }
+                p
+                {
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 16px;
+                    color:black;
+                }
+                button
+                {
+                    margin: 10px;
+                    display: inline-block;
+                    color: black;
+                }
+                .active 
+                {
+                    background-color: rgba(214, 208, 208, 0.979) !important;
+                }
+                .container
+                {
+                    align-items: center;
+                    margin:0 auto;
+                    text-align: center;
+                }
+                #Answer
+                {
+                    display:none;
+                }
+                .page-header
+                {
+                    color:black;
+                }
+            </style>
+            <script>
+                $(document).ready(function(){
+                $("button").on(
+                {
+                    click: function()
+                    { 
+                        $('#submit').prop("disabled",false);
+                        $("button").removeClass("active");
+                        $(this).addClass("active");
+                       
+                    }  
+                });
+                $('#submit').on(
+                {
+                    click:function()
+                    {
+                        if(submit.disabled)
+                        {
+
+                        }
+                        else
+                        {
+                        $('#a').prop("disabled",true);
+                        $('#b').prop("disabled",true);
+                        $('#c').prop("disabled",true);
+                        $('#d').prop("disabled",true);
+                        }
+                        
+                    }
+                });
+                });
+            </script>
+    </head>
+    <body>
+        <!--Nav bar code-->
+        <nav>
+            <div class="nav-wrapper black">
+              <a href="#!" class="brand-logo" style="padding-left:5.25%" >Solan |</a>
+              <a href="dashboardS.html" class="brand-logo" style="padding-left:13%"> Dashboard</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="slide-out" class="sidenav">
+                <li><div class="user-view">
+                  <div class="background">
+                    <img src="assets/images/absolute-black-new.jpg">
+                  </div>
+                  <a href="#user"><img class="circle" src="assets/images/KFP3-promo-po4.jpg"></a>
+                  <a href="#name"><span class="white-text bold name">Name: Po Ping</span></a>
+                  <a href="#email"><span class="white-text bold email">Email: poisamazing@gmail.com</span></a>
+                  </div></li>
+                <li><a href="#!">Class: 10C</a></li>
+                <li><a href="#!">Subject: Science</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect waves-light btn" href="#!">Change Password</a></li>
+                <!--<li><a href="#!">Second Link</a></li>-->
+                <li><div class="divider"></div></li>  
+              </ul>
+              
+              <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+              
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">Points</a></li>
+                <li><a href="#">Logout</a></li>
+                
+              </ul>
+            </div>
+          </nav>
+          <!--End of nav bar code-->
+        <div>
+            <div class="container">
+                <div class="page-header">
+                <h1>Question of the week</h1>      
+                </div>    
+            </div>
+        </div>
+        <div class="container">
+            <div class="z-depth-4">
+                <div  class="well">
+                    <h5>
+                    In which of the following processes do plants get rid of excess water absorbed by the roots?
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <button type="button" id="a" class="btn waves-effect waves-black"><p>A) Photosynthesis</p></button>
+            </div>
+            <div>
+                <button type="button" id="b" class="btn waves-effect waves-black"><p>B) Respiration</p></button>
+            </div>
+            <div>
+                <button type="button" id="c" class="btn waves-effect waves-black"><p>C) Transpiration</p></button>
+            </div>
+            <div>
+                <button type="button" id="d" class="btn waves-effect waves-black"><p>D) All of the above</p></button>
+            </div>
+            <div class="container" id="Submit">
+                <br>
+                <button id="submit" disabled="disabled" type="Submit" class="btn waves-effect waves-black" onclick="disp()" ><p>Submit</p></button>
+            </div>
+        </div>
+        <div id="Answer" class="container">
+            <br>
+            <div class="z-depth-4">
+                <div class="well well-sm" style="background-color: rgb(43, 173, 43)">
+                <p style="color:ghostwhite">You're right! Congratulations!</p>
+                </div>
+            </div>
+            <div class="z-depth-4">
+                <div class="well well-sm" style="background-color:rgb(226, 49, 49)">
+                <p style="color:ghostwhite"> D is the correct answer. Better luck next time!</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function disp() 
+            {
+                document.getElementById("Answer").style.display = "block";
+            }
+        </script>
+        <!--Footer-->
+        <section once="" class="cid-r03cwKgizw" id="footer6-3">
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="col-12">
+                    <p "mbr-text mb-0 mbr-fonts-style display-7">
+                        © Copyright 2018 Solan - All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--Footer End-->
+        <!--Scripts Used-->
+      <script src="assets/web/assets/jquery/jquery.min.js"></script>
+      <script src="assets/popper/popper.min.js"></script>
+      <script src="assets/tether/tether.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/smoothscroll/smooth-scroll.js"></script>
+      <script src="assets/dropdown/js/script.min.js"></script>
+      <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+      <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+      <script src="assets/parallax/jarallax.min.js"></script>
+      <script src="assets/theme/js/script.js"></script>
+      <script src="assets/formoid/formoid.min.js"></script>
+      <script src="assets/sidebar/sidebar.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <script src="modal.js"></script>
+      <script src="navbar.js"></script>
+      
+      
+     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
+     <input name="animation" type="hidden"> <!--btn to scroll to top-->
+      
+    
+    </body>
+
+</html>
