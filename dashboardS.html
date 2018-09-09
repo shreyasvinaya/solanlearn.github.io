@@ -34,22 +34,22 @@
           <body>
                 <nav>
                         <div class="nav-wrapper light blue darken-2">
-                          <a href="#!" class="brand-logo" style="padding-left:5.25%" >Solan |</a>
-                          <a href="#!" class="brand-logo" style="padding-left:13%" > Dashboard</a>
+                          <a href="index.html" class="brand-logo" style="padding-left:5.25%" >Solan |</a>
+                          <a href="dashboardS.html" class="brand-logo" style="padding-left:13%" > Dashboard</a>
                           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                           <ul id="slide-out" class="sidenav">
                             <li><div class="user-view">
                               <div class="background">
                                 <img src="assets/images/0288D1 sidebar bg.png">
                               </div>
-                              <a href="#user"><img class="circle" src="assets/images/KFP3-promo-po4.jpg"></a>
-                              <a href="#name"><span class="white-text bold name">Name: Po Ping</span></a>
-                              <a href="#email"><span class="white-text bold email">Email: poisamazing@gmail.com</span></a>
+                              <a style="cursor: default;" href="#user"><img class="circle" src="assets/images/KFP3-promo-po4.jpg"></a>
+                              <a style="cursor: default;" href="#name"><span class="white-text bold name">Name: Po Ping</span></a>
+                              <a style="cursor: default;" href="#email"><span class="white-text bold email">Email: poisamazing@gmail.com</span></a>
                               
                               
                             </div></li>
-                            <li><a href="#!">Class: 10C</a></li>
-                            <li><a href="#!">Subject: Science</a></li>
+                            <li><a style="cursor: default;" href="#!">Class: 10</a></li>
+                            <li><a style="cursor: default;" href="#!">Section: C</a></li>
                             <li><div class="divider"></div></li>
                             <li><a class="waves-effect waves-light light blue darken-2 btn modal-trigger" href="#modal1">Change Password</a></li>
                             <!--<li><a href="#!">Second Link</a></li>-->
@@ -64,8 +64,8 @@
                           
                           <ul class="right hide-on-med-and-down">
                             <li><a href="#leaderboard">Leaderboard</a></li>
-                            <li><a href="#">Points<span class="new badge" data-badge-caption="">4</span></a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a style="cursor: default;" href="#!">Points<span class="new badge" data-badge-caption="">4</span></a></li>
+                            <li><a href="index.html">Logout</a></li>
                             
                           </ul>
                           <!-- Modal Structure -->
@@ -93,13 +93,21 @@
                               
                               
                               <br>
-                              <center><i class="material-icons large">format_list_bulleted</i></center>
+                              <center><i class="material-icons large" style="cursor: pointer;">format_list_bulleted</i></center>
                               <br>
-                              <center><span class="card-title">View Question Bank</span></center>
-                              
+                              <center><span class="card-title" style="cursor: pointer;">View Question Bank</span></center>
+                              <div class = activator style="padding-left: 97%; cursor: pointer;"><i class="material-icons right">info</i></div>
                               <br>
                               
-                            </div>
+                                  </div>
+                                  <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">View Student Questions<i class="material-icons right icon-black">close</i></span>
+                                    <ul class="browser-default">
+                                      <li>View questions that have been submitted by students.</li>
+                                      <li>Edit and delete questions that have been submitted by students.</li>
+                                      <li>Select question of the week.</li>
+                                    </ul>
+                                  </div>
                           </div>
                         </div>
                         <div class="col s12 m6">
@@ -110,7 +118,17 @@
                                     <center><a href="QuestionOfTheWeekS.html" style="color:black"><i class="material-icons large">question_answer</i></a></center>
                                     <br>
                                     <center><a href="QuestionOfTheWeekS.html" style="color:black"><span class="card-title">Question of the week</span></a></center>
-                                    <br>
+                                    <div class = activator style="padding-left: 97%; cursor: pointer;"><i class="material-icons right">info</i></div>
+                              <br>
+                              
+                                  </div>
+                                  <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">View Student Questions<i class="material-icons right icon-black">close</i></span>
+                                    <ul class="browser-default">
+                                      <li>View questions that have been submitted by students.</li>
+                                      <li>Edit and delete questions that have been submitted by students.</li>
+                                      <li>Select question of the week.</li>
+                                    </ul>
                                   </div>
                                 </div>
                               </div>
@@ -124,18 +142,27 @@
                             
                               
                         
-                           <div class="card grey lighten-4 z-depth-1 hoverable card modal-trigger" data-target="modal2">
+                           <div class="card grey lighten-4 z-depth-1 hoverable card">
                                 <div class="card-content black-text">
                                   
                                   
                               
                                   <br>
-                                  <center><i class="material-icons large">create</i></center>
+                                  <center><i class="material-icons large modal-trigger" data-target="modal2" style="cursor: pointer;">create</i></center>
                                   <br>
-                                  <center><span class="card-title">Submit New Question</span></center>
-                                  
-                                  <br>
-                              </div>
+                                  <center><span class="card-title modal-trigger" data-target="modal2" style="cursor: pointer;">Submit New Question</span></center>
+                                  <div class = activator style="padding-left: 97%; cursor: pointer;"><i class="material-icons right">info</i></div>
+                              <br>
+                              
+                                  </div>
+                                  <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">View Student Questions<i class="material-icons right icon-black">close</i></span>
+                                    <ul class="browser-default">
+                                      <li>View questions that have been submitted by students.</li>
+                                      <li>Edit and delete questions that have been submitted by students.</li>
+                                      <li>Select question of the week.</li>
+                                    </ul>
+                                  </div>
                               </div>
                               
                               <div id="modal2" class="modal">
