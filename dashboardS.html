@@ -28,10 +28,45 @@
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
             <!--<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">-->
+            <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+            <style>
+                /* Modal Content */
+                .modal-content {
+                    background-color: rgb(255, 255, 255);
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 80%;
+                }
+                .close:hover,
+                .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            
+               .active, .collapsible:hover {
+                background-color: #1976D2; 
+      
+               }
+               #Subjective
+               {
+                   display:none;
+               }
+               #MCQ
+               {
+                   display:none;
+               }
+               </style>
             
           </head>
           
           <body>
+              <script>  $(document).ready(function(){
+                  $('select').formSelect();
+                });
+                </script>
                 <nav>
                         <div class="nav-wrapper light blue darken-2">
                           <a href="index.html" class="brand-logo" style="padding-left:5.25%" >Solan |</a>
@@ -93,9 +128,9 @@
                               
                               
                               <br>
-                              <center><i class="material-icons large" style="cursor: pointer;">format_list_bulleted</i></center>
+                              <center><i class="material-icons large modal-trigger" data-target="modal3"style="cursor: pointer;">format_list_bulleted</i></center>
                               <br>
-                              <center><span class="card-title" style="cursor: pointer;">View Question Bank</span></center>
+                              <center><span class="card-title modal-trigger" data-target="modal3" style="cursor: pointer">View Question Bank</span></center>
                               <div class = activator style="padding-left: 97%; cursor: pointer;"><i class="material-icons right">info</i></div>
                               <br>
                               
@@ -107,6 +142,37 @@
                                     </ul>
                                   </div>
                           </div>
+                          <div id="modal3" class="modal">
+                              <br>
+                              <br>
+                              <div class="container">
+                                <h4>Enter Subject and Chapter</h4>
+                                  <form class = "input-field">
+                                      <div class = "row">
+                                            <select>
+                                               <option value = "" disabled selected>Select Subject</option>
+                                               <option style="text-emphasis-color: #1976D2" value = "1">Physics</option>
+                                               <option value = "2">Chemistry</option>
+                                               <option value = "3">Biology</option>
+                                            </select>               
+                                      </div>
+                                  </form>
+                                  <form class = "input-field">
+                                          <div class = "row">
+                                                <select>
+                                                   <option value = "" disabled selected>Select chapter</option>
+                                                   <option value = "1">Optics</option>
+                                                   <option value = "2">Thermodynamics</option>
+                                                   <option value = "3">Simple harmonic motion</option>
+                                                </select>               
+                                          </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: white">
+                                      <a href="A3.html"><button class="btn waves-effect waves-light blue darken-2" >View question bank</button></a>
+                                    </div>
+                                  </div>
+
                         </div>
                         <div class="col s12 m6">
                                 <div class="card grey lighten-4 z-depth-1 hoverable">
@@ -128,6 +194,8 @@
                                       
                                     </ul>
                                   </div>
+                                </div>
+                                
                                 </div>
                               </div>
                         
@@ -164,14 +232,102 @@
                               </div>
                               
                               <div id="modal2" class="modal">
-                                  <div class="modal-content">
-                                    <h4>Submit New Question</h4> <!--add modal content here-->
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda error quidem sunt consequatur sint dolore veniam saepe in, consequuntur odit. Est vitae, deserunt perferendis quae perspiciatis voluptatem mollitia exercitationem!</p>
-                                  </div>
+                                  <div class="modal-content"><br>
+                                    <br>
+                                    <div class="container">
+                                      <h4>Enter Subject and Chapter</h4>
+                                        <form class = "input-field">
+                                            <div class = "row">
+                                                  <select>
+                                                     <option value = "" disabled selected>Select Subject</option>
+                                                     <option style="text-emphasis-color: #1976D2" value = "1">Physics</option>
+                                                     <option value = "2">Chemistry</option>
+                                                     <option value = "3">Biology</option>
+                                                  </select>               
+                                            </div>
+                                        </form>
+                                        <form class = "input-field">
+                                                <div class = "row">
+                                                      <select>
+                                                         <option value = "" disabled selected>Select Chapter</option>
+                                                         <option value = "1">Optics</option>
+                                                         <option value = "2">Thermodynamics</option>
+                                                         <option value = "3">Simple harmonic motion</option>
+                                                      </select>               
+                                                </div>
+                                            </form>
+                                            <form class = "input-field">
+                                                    <div class = "row">
+                                                          <select>
+                                                             <option value = "" disabled selected>Select Question type</option>
+                                                             <option value = "1" onclick="dispS()">Subjective</option>
+                                                             <option value = "2" onclick="dispM()">MCQ</option>
+                                                          </select>               
+                                                    </div>
+                                                </form>
+                                                <div id="Subjective" class="container">
+                                                    <br>
+                                                    <div class="row">
+                                                        <form class="col s12">
+                                                            <div class="row">
+                                                                <div class="input-field col s12">
+                                                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                                <label for="textarea1">Enter question</label>
+                                                                </div>
+                                                            </div>   
+                                                    </div>
+                                                </div>
+                                                <div id="MCQ" class="container">
+                                                        <br>
+                                                        <div class="row">
+                                                            <form class="col s12">
+                                                                <div class="row">
+                                                                    <div class="input-field col s12">
+                                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                                    <label for="textarea1">Enter question</label>
+                                                                    </div>
+                                                                </div>   
+                                                                <div class="row">
+                                                                        <div class="input-field col s12">
+                                                                        <textarea id="textarea2" class="materialize-textarea"></textarea>
+                                                                        <label for="textarea2">Option A</label>
+                                                                        </div>
+                                                                </div>   
+                                                                <div class="row">
+                                                                        <div class="input-field col s12">
+                                                                        <textarea id="textarea3" class="materialize-textarea"></textarea>
+                                                                        <label for="textarea3">Option B</label>
+                                                                        </div>
+                                                                </div>   
+                                                                <div class="row">
+                                                                        <div class="input-field col s12">
+                                                                        <textarea id="textarea4" class="materialize-textarea"></textarea>
+                                                                        <label for="textarea1">Oction C</label>
+                                                                        </div>
+                                                                </div>   
+                                                                <div class="row">
+                                                                        <div class="input-field col s12">
+                                                                        <textarea id="textarea5" class="materialize-textarea"></textarea>
+                                                                        <label for="textarea5">Option C</label>
+                                                                        </div>
+                                                                </div>   
+                                                        </div>
+                                                    </div><script>
+                                        function dispS() 
+                                        {
+                                            document.getElementById("Subjective").style.display = "block";
+                                        }
+                                        function dispM() 
+                                        {
+                                            document.getElementById("MCQ").style.display = "block";
+                                        }
+                                    </script>
+                                    
                                   <div class="modal-footer">
-                                    <a href="#!" class="modal-close waves-red btn-flat">Close</a>
+                                      <button class="btn waves-effect waves-light blue darken-2" href="dashboardS.html">Submit</button>
                                   </div>
                                 </div>
+                            </div>
                             </div>
                           
                         <section id ="leaderboard" style="background-color: white">
