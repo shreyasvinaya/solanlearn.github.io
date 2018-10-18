@@ -130,23 +130,53 @@
                             
                               
                               
-                              <center><i class="material-icons large" style="cursor: pointer;">file_download</i></center>
+                              <center><i class="material-icons large modal-trigger" data-target="modal3" style="cursor: pointer;">file_download</i></center>
                               <br>
-                              <center><span class="card-title" style="cursor: pointer;">Download Question Bank</span></center>
+                              <center><span class="card-title modal-trigger" data-target="modal3" style="cursor: pointer;">View and Download Question Bank</span></center>
                               
                               <div class = activator style="padding-left: 97%; cursor: pointer;"><i class="material-icons right">info</i></div>
                               <br>
                               
                                   </div>
                                   <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Download Question Bank<i class="material-icons right icon-black">close</i></span>
+                                    <span class="card-title grey-text text-darken-4">View and download Question Bank<i class="material-icons right icon-black">close</i></span>
                                     
                                    <ul class="browser-default">
-                                   <li>Download a list of questions submitted by students and teachers for every chapter.</li> 
+                                   <li>View and download a list of questions submitted by students and teachers for every chapter.</li> 
                                      
                                     </ul>
                                   </div>
                                 </div>
+                                <div id="modal3" class="modal">
+                                  <br>
+                                  <br>
+                                  <div class="container">
+                                    <h4>Enter Subject and Chapter</h4>
+                                      <form class = "input-field">
+                                          <div class = "row">
+                                                <select>
+                                                   <option value = "" disabled selected>Select Subject</option>
+                                                   <option style="text-emphasis-color: #1976D2" value = "1">Physics</option>
+                                                   <option value = "2">Chemistry</option>
+                                                   <option value = "3">Biology</option>
+                                                </select>               
+                                          </div>
+                                      </form>
+                                      <form class = "input-field">
+                                              <div class = "row">
+                                                    <select>
+                                                       <option value = "" disabled selected>Select chapter</option>
+                                                       <option value = "1">Optics</option>
+                                                       <option value = "2">Thermodynamics</option>
+                                                       <option value = "3">Simple harmonic motion</option>
+                                                    </select>               
+                                              </div>
+                                          </form>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: white">
+                                          <a href="B4.html"><button class="btn waves-effect waves-light blue darken-2" >View and download question bank</button></a>
+                                        </div>
+                                      </div>
                                 
                               </div>
                         <div class="col s12 m6">
@@ -154,16 +184,16 @@
                                   <div class="card-content black-text">
                                     
                                     <br>
-                                    <center><a href="B1.html" style="color:black"><i class="material-icons large" style="cursor: pointer">view_list</i></a></center>
+                                    <center><a href="B1.html" style="color:black"><i class="material-icons large modal-trigger" data-target="modal4" style="cursor: pointer">view_list</i></a></center>
                               <br>
-                              <center><a href="B1.html" style="color:black"> <span class="card-title" style="cursor: pointer;">View Student Questions</span></a></center>
+                              <center><a href="B1.html" style="color:black"> <span class="card-title modal-trigger" data-target="modal4" style="cursor: pointer;">Student Question Management</span></a></center>
                               
                               
                               <div class = activator style="padding-left: 97%; cursor: pointer;"><i class="material-icons right">info</i></div>
                               <br>
                                   </div>
                                   <div class="card-reveal">
-                                      <span class="card-title grey-text text-darken-4">View Student Questions<i class="material-icons right icon-black">close</i></span>
+                                      <span class="card-title grey-text text-darken-4">View and download Student Questions<i class="material-icons right icon-black">close</i></span>
                                       <ul class="browser-default">
                                         <li>View questions that have been submitted by students.</li>
                                         <li>Edit and delete questions that have been submitted by students.</li>
@@ -171,7 +201,36 @@
                                       </ul>
                                     </div>
                                 </div>
-                                
+                                <div id="modal4" class="modal">
+                                  <br>
+                                  <br>
+                                  <div class="container">
+                                    <h4>Enter class and Section</h4>
+                                      <form class = "input-field">
+                                          <div class = "row">
+                                                <select>
+                                                   <option value = "" disabled selected>Select Class</option>
+                                                   <option style="text-emphasis-color: #0288d1" value = "1">All classes</option>
+                                                   <option value = "2">Class 9</option>
+                                                   <option value = "3">Class 10</option>
+                                                </select>               
+                                          </div>
+                                      </form>
+                                      <form class = "input-field">
+                                              <div class = "row">
+                                                    <select>
+                                                       <option value = "" disabled selected>Select section</option>
+                                                       <option value = "1">All sections</option>
+                                                       <option value = "2">A</option>
+                                                       <option value = "3">B</option>
+                                                    </select>               
+                                              </div>
+                                          </form>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: white">
+                                          <a href="B1.html"><button class="btn waves-effect waves-light blue darken-2" >Manage student questions</button></a>
+                                        </div>
+                                      </div>
                               </div>
                         
                       </div>
@@ -199,13 +258,12 @@
               <span class="card-title grey-text text-darken-4">Submit New Question<i class="material-icons right icon-black">close</i></span>
               <ul class="browser-default">
                 <li>Submit your own questions.</li>
-                <li>It'll be available on the chapter-vise question bank for the student's benefit.</li>
+                <li>It'll be available on the chapter-wise question bank for the student's benefit.</li>
                 
               </ul>
             </div>
           </div>
           <div id="modal2" class="modal">
-              <div class="modal-content">
                 <br>
                 <br>
                 <div class="container">
@@ -276,19 +334,19 @@
                                             <div class="row">
                                                     <div class="input-field col s12">
                                                     <textarea id="textarea4" class="materialize-textarea"></textarea>
-                                                    <label for="textarea1">Oction C</label>
+                                                    <label for="textarea1">Option C</label>
                                                     </div>
                                             </div>   
                                             <div class="row">
                                                     <div class="input-field col s12">
                                                     <textarea id="textarea5" class="materialize-textarea"></textarea>
-                                                    <label for="textarea5">Option C</label>
+                                                    <label for="textarea5">Option D</label>
                                                     </div>
                                             </div>   
                                     </div>
                                 </div>
                                 </div>
-                                </div><script>
+                                <script>
                     function dispS() 
                     {
                         document.getElementById("Subjective").style.display = "block";

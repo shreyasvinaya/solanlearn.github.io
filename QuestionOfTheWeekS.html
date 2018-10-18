@@ -42,6 +42,10 @@
                 {
                     color:black;
                 }
+                .btn-floating
+                {
+                    background-color: #eeeeee;
+                }
                 #option
                 {
                     margin-left: 50px;
@@ -50,17 +54,29 @@
                     top:-50px;
 
                 }
-                .a:active
+                .btn-floating:link
                 {
-                    background-color: #1976D2;
+                    background-color: #1976d2;
                 }
-                .a:visited
+                .btn-floating:visited
                 {
-                    background-color: #1976D2;
+                    background-color: #1976d2;
                 }
-                .a:hover
+                .btn-floating:hover
                 {
-                    background-color: #1976D2;
+                    background-color: #1976d2;
+                }
+                .btn-floating:active
+                {
+                    background-color: #1976d2;
+                }
+                .btn-floating:focus
+                {
+                    background-color: #1976d2;
+                }
+                .btn-floating:target
+                {
+                    background-color: #1976d2;
                 }
             </style>
             <script>
@@ -102,6 +118,7 @@
                         $('#submit').prop("disabled",false);
                         $("button").removeClass("active");
                         $(this).addClass("active");
+                        
                        
                     }  
                 });
@@ -198,19 +215,19 @@
         <div class="container" style="text-align: left">
                 <div class="divider"></div>
                 <br>
-                <a id="a" class="btn-floating waves-effect waves-light grey lighten-4 black-text" style="text-align: center" >A</a>
+                <button id="a" class="btn-floating waves-effect waves-light black-text" style="text-align: center" >A</button>
                   <h6 id="option">Photosynthesis</h6>
                 <div class="divider"></div>
                 <br>
-                <a id="b" class="btn-floating waves-effect waves-light grey lighten-4 black-text" style="text-align: center" >B</a>
+                <button id="b" class="btn-floating waves-effect waves-light black-text" style="text-align: center" >B</button>
                   <h6 id="option">Transpiration</h6>
                 <div class="divider"></div>
                 <br>
-                <a id="c" class="btn-floating waves-effect waves-light grey lighten-4 black-text" style="text-align: center" >C</a>
+                <button id="c" class="btn-floating waves-effect waves-light black-text" style="text-align: center" >C</button>
                   <h6 id="option">Respiration</h6>
                 <div class="divider"></div>
                 <br>
-                <a id="d" class="btn-floating waves-effect waves-light grey lighten-4 black-text" style="text-align: center" >D</a>
+                <button id="d" class="btn-floating waves-effect waves-light black-text" style="text-align: center" >D</button>
                   <h6 id="option">All of the above</h6>
         </div>
             <div class="container" id="Submit">
@@ -243,7 +260,7 @@
         <br>
         <br>
         <!--Footer-->
-        <footer class="page-footer light blue darken-2">
+        <footer class="page-footer blue darken-2">
             <p style="padding-left:22%;">© Copyright 2018 Solan - All Rights Reserved</p>
             <br>
             
@@ -252,29 +269,21 @@
       
         <!--Footer End-->
         <!--Scripts Used-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-        <script src="modal.js"></script>
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-        <script src="leaderboard.js"></script>
-        <script src="assets/web/assets/jquery/jquery.min.js"></script>
-        <script src="assets/popper/popper.min.js"></script>
-        <script src="assets/tether/tether.min.js"></script>
-        <script src="assets/smoothscroll/smooth-scroll.js"></script>
-        <script src="assets/dropdown/js/script.min.js"></script>
-        <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-        <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
-        <script src="assets/parallax/jarallax.min.js"></script>
-        <script src="assets/theme/js/script.js"></script>
-        <script src="assets/formoid/formoid.min.js"></script>
-        <script src="assets/sidebar/sidebar.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-        <script src="modal.js"></script>
-        <script src="navbar.js"></script>
-
-      <!--
-           
-      -->
+      <script src="assets/web/assets/jquery/jquery.min.js"></script>
+      <script src="assets/popper/popper.min.js"></script>
+      <script src="assets/tether/tether.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/smoothscroll/smooth-scroll.js"></script>
+      <script src="assets/dropdown/js/script.min.js"></script>
+      <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+      <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+      <script src="assets/parallax/jarallax.min.js"></script>
+      <script src="assets/theme/js/script.js"></script>
+      <script src="assets/formoid/formoid.min.js"></script>
+      <script src="assets/sidebar/sidebar.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <script src="modal.js"></script>
+      <script src="navbar.js"></script>
       
       
      <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>

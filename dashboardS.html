@@ -52,7 +52,7 @@
                }
                #Subjective
                {
-                   display:none;
+                    display:none;
                }
                #MCQ
                {
@@ -224,7 +224,7 @@
                                   <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Submit New Question<i class="material-icons right icon-black">close</i></span>
                                     <ul class="browser-default">
-                                      <li>Submit your very own questions chapter-vise to earn points.</li>
+                                      <li>Submit your very own questions chapter-wise to earn points.</li>
                                       <li>Make the trickiest questions you can and challenge your friends to crack it.</li>
                                       <li>The best questions stand a chance to be selected as the question of the week. If your question is selected, you will earn more points.</li>
                                     </ul>
@@ -232,10 +232,10 @@
                               </div>
                               
                               <div id="modal2" class="modal">
-                                  <div class="modal-content"><br>
-                                    <br>
+                                  <br>
+                                  <br>
                                     <div class="container">
-                                      <h4>Enter Subject and Chapter</h4>
+                                      <h4>Enter Question details</h4>
                                         <form class = "input-field">
                                             <div class = "row">
                                                   <select>
@@ -258,9 +258,9 @@
                                             </form>
                                             <form class = "input-field">
                                                     <div class = "row">
-                                                          <select>
+                                                          <select value="B" onChange={this.handleSelectChange}>
                                                              <option value = "" disabled selected>Select Question type</option>
-                                                             <option value = "1" onclick="dispS()">Subjective</option>
+                                                             <option value = "1"  onclick="dispS()">Subjective</option>
                                                              <option value = "2" onclick="dispM()">MCQ</option>
                                                           </select>               
                                                     </div>
@@ -302,22 +302,23 @@
                                                                 <div class="row">
                                                                         <div class="input-field col s12">
                                                                         <textarea id="textarea4" class="materialize-textarea"></textarea>
-                                                                        <label for="textarea1">Oction C</label>
+                                                                        <label for="textarea1">Option C</label>
                                                                         </div>
                                                                 </div>   
                                                                 <div class="row">
                                                                         <div class="input-field col s12">
                                                                         <textarea id="textarea5" class="materialize-textarea"></textarea>
-                                                                        <label for="textarea5">Option C</label>
+                                                                        <label for="textarea5">Option D</label>
                                                                         </div>
                                                                 </div>   
                                                         </div>
-                                                    </div><script>
+                                                    </div>
+                                        <script>
                                         function dispS() 
                                         {
-                                            document.getElementById("Subjective").style.display = "block";
+                                            document.getElementById("#Subjective").style.display="block";
                                         }
-                                        function dispM() 
+                                        function dispM
                                         {
                                             document.getElementById("MCQ").style.display = "block";
                                         }
@@ -327,7 +328,6 @@
                                       <button class="btn waves-effect waves-light blue darken-2" href="dashboardS.html">Submit</button>
                                   </div>
                                 </div>
-                            </div>
                             </div>
                           
                         <section id ="leaderboard" style="background-color: white">
@@ -347,7 +347,7 @@
                                
                           
                         </section>
-                        <footer class="page-footer light blue darken-2">
+                        <footer class="page-footer blue darken-2">
                             <p style="padding-left:22%;">© Copyright 2018 Solan - All Rights Reserved</p>
                             <br>
                             
